@@ -1,0 +1,164 @@
+.user-info {
+  width: 100%;
+  min-height: 100vh; 
+  margin-top: -7rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+  background-color: #c7b198;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Raleway", sans-serif;
+}
+
+.user-card {
+  background-color: white;
+  width: 400px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: 5px;
+  box-shadow: -20px -20px 0px 0px #dfd3c3;
+  border-radius: 10px;
+  -webkit-animation-name: shadow-show;
+
+  -webkit-animation-duration: 1.5s;
+
+  animation-name: shadow-show;
+  animation-duration: 1.5s;
+  transition-timing-function: cubic-bezier(0.795, 0, 0.165, 1);
+  
+}
+.user-card h1,
+.user-card h2,
+.user-card h3,
+.user-card h4,
+.user-card h5 {
+  margin: 0px;
+  padding: 10px 10px 15px 10px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 30px;
+  color: #445761;
+}
+
+.user-card h2 {
+  padding: 0 2rem 0 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.user-icon {
+  font-size: 1.3rem;
+}
+.user-icon:hover {
+  cursor: pointer;
+}
+.user-card hr {
+  display: block;
+  border: none;
+  height: 3px;
+  background-color: #c7b198;
+  margin: 16px;
+  -webkit-animation-name: line-show;
+
+  -webkit-animation-duration: 0.3s;
+
+  animation-name: line-show;
+  animation-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.795, 0, 0.165, 1);
+  
+}
+.user-card i {
+  margin: 15px 0px 0px 0px;
+  font-family: "Noto Sans KR", sans-serif;
+  padding-left: 25px;
+  font-weight: 100;
+  letter-spacing: -0.25px;
+  line-height: 1.9;
+  font-size: 16px;
+  word-break: break-all;
+  word-wrap: pre-wrap;
+  color: #445761;
+  -webkit-animation-name: p-show;
+
+  -webkit-animation-duration: 1.5s;
+
+  animation-name: p-show;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes line-show {
+  from {
+    margin: 0px 100px;
+  }
+  to {
+    margin: 0px;
+  }
+}
+
+@keyframes line-show {
+  from {
+    margin: 0px 100px;
+  }
+  to {
+    margin: 0px;
+  }
+}
+
+@-webkit-keyframes p-show {
+  from {
+    color: white;
+  }
+  to {
+    color: #282828;
+  }
+}
+
+@keyframes p-show {
+  from {
+    color: white;
+  }
+  to {
+    color: #282828;
+  }
+}
+
+@-webkit-keyframes shadow-show {
+  from {
+    box-shadow: 0px 0px 0px 0px #e0e0e0;
+  }
+  to {
+    box-shadow: -20px -20px 0px 0px #dfd3c3;
+  }
+}
+
+@keyframes shadow-show {
+  from {
+    box-shadow: 0px 0px 0px 0px #e0e0e0;
+  }
+  to {
+    box-shadow: -20px -20px 0px 0px #dfd3c3;
+  }
+}
+
+.edit {
+  margin-top: 9px;
+  margin-right: 10px;
+}
+.edit:hover {
+  color: #5cb85c;
+}
+
+.delete:hover {
+  color: #e21a2e;
+}
+
+.profil-icons-container {
+display: flex;
+flex-direction: row;
+}

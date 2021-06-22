@@ -1,0 +1,131 @@
+.user-pet-info {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -3rem;
+  background-color: #c7b198;
+}
+
+.user-pet-card {
+  background-color: white;
+  width: 80rem;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin-left: 10rem;
+  margin-top: -5rem;
+  margin-bottom: 5rem;
+  box-shadow: -20px -20px 0px 0px #dfd3c3;
+  border-radius: 10px;
+  -webkit-animation-name: shadow-show;
+
+  -webkit-animation-duration: 1.5s;
+
+  animation-name: shadow-show;
+  animation-duration: 1.5s;
+  transition-timing-function: cubic-bezier(0.795, 0, 0.165, 1);
+ 
+}
+.user-pet-card h2 {
+  margin: 0px;
+  padding: 0.7rem 0rem 0.1rem 1.8rem;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 30px;
+  color: #445761;
+}
+.user-pet-card hr {
+  display: block;
+  border: none;
+  height: 3px;
+  background-color: #c7b198;
+  margin: 16px;
+  -webkit-animation-name: line-show;
+
+  -webkit-animation-duration: 0.3s;
+
+  animation-name: line-show;
+  animation-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.795, 0, 0.165, 1);
+
+}
+.user-pet-card i {
+  margin: 15px 0px 0px 0px;
+  font-family: "Noto Sans KR", sans-serif;
+  padding-left: 25px;
+  font-weight: 100;
+  letter-spacing: -0.25px;
+  line-height: 1.9;
+  font-size: 16px;
+  word-break: break-all;
+  word-wrap: pre-wrap;
+  color: #445761;
+  -webkit-animation-name: p-show;
+
+  -webkit-animation-duration: 1.5s;
+
+  animation-name: p-show;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes line-show {
+  from {
+    margin: 0px 100px;
+  }
+  to {
+    margin: 0px;
+  }
+}
+
+@keyframes line-show {
+  from {
+    margin: 0px 100px;
+  }
+  to {
+    margin: 0px;
+  }
+}
+
+@-webkit-keyframes p-show {
+  from {
+    color: white;
+  }
+  to {
+    color: #282828;
+  }
+}
+
+@keyframes p-show {
+  from {
+    color: white;
+  }
+  to {
+    color: #282828;
+  }
+}
+
+@-webkit-keyframes shadow-show {
+  from {
+    box-shadow: 0px 0px 0px 0px #e0e0e0;
+  }
+  to {
+    box-shadow: -20px -20px 0px 0px #dfd3c3;
+  }
+}
+
+@keyframes shadow-show {
+  from {
+    box-shadow: 0px 0px 0px 0px #e0e0e0;
+  }
+  to {
+    box-shadow: -20px -20px 0px 0px #dfd3c3;
+  }
+}
+.no-user-pets > h4 {
+  font-size: 1.2rem;
+  color: #314047;
+  margin: 1rem;
+}
+.no-user-pets {
+  margin-bottom: 3rem;
+}

@@ -1,0 +1,59 @@
+.favorite-item {
+    width: 210px;
+    height: 250px;
+    background-color: #cc5797;
+    border-radius: 4px;
+    margin: 2rem;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .favorite-item__image {
+    display: block;
+    width: 100%;
+    height: 195px;
+    position: relative;
+  }
+  
+  .favorite-item__info {
+    box-sizing: border-box;
+    position: relative;
+    background-color: #fff;
+    text-align: center;
+    padding: 16px 10px 22px;
+    font-size: 0.8rem;
+    color: #422c73;
+  }
+  img {
+    max-width: 100%;
+    position: relative;
+  }
+  
+  .heart-container {
+    position: absolute;
+    background-color: #fafafa;
+    top: 4px;
+    right: 4px;
+    padding: 8px;
+    border-radius: 80px;
+    opacity: 0.8;
+    transition: 0.7s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .heart-container:hover {
+    opacity: 1;
+  }
+  .fa-heart {
+    font-size: 1.4rem;
+    transition: 0.4s;
+  }
+  .fa-heart:hover {
+    color: #f50057;
+  }
+  .fas {
+    color: #f50057;
+    transition: 0.4s;
+  }
+  

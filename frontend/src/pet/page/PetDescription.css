@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik:ital,wght@0,500;1,400&display=swap');
+
+.container__pet-description {
+  padding: 13rem;
+  display: grid;
+  grid-template-columns: 100px 100px;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header main card"
+    "footer footer footer footer";
+  background-color: #d96aa7;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.text__pet-description {
+font-family: "Raleway";
+font-weight: 900;
+}
+.contact__pet-description {
+  grid-area: card;
+  background: linear-gradient(to left top, #c32c71 50%, #b33771 50%);
+  color: #fff;
+  font-size: 23px;
+  letter-spacing: 3px;
+  font-family: "Lato";
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 2%;
+  margin-left: 3rem;
+  margin-top: -3rem;
+  margin-bottom: -3rem;
+}
+.image__pet-description {
+  grid-area: header;
+  height: 100%;
+  width: 100%;
+}
+.info__pet-description {
+  grid-area: main;
+  padding-left: 12rem;
+  padding-right: 12rem;
+  padding-top: 2.5rem;
+  color: #b33771;
+  background: white;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 3%;
+  border-style: outset;
+  border-width: 2px;
+  border-color: #b33771;
+}
+.description__pet-description {
+  grid-area: footer;
+  color: aliceblue;
+  margin-top: 2rem;
+  color: #6d214f;
+  padding-top: 3rem;
+}
+.box__pet-description .content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffd5cd;
+}
+
+.box__pet-description {
+  width: 360px;
+  height: 360px;
+  box-sizing: border-box;
+  padding: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.box__pet-description::before {
+  content: "";
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  background: repeating-linear-gradient(
+    white 0%,
+    white 7.5px,
+    #b33771 7.5px,
+    #c32c71 15px,
+    white 15px,
+    white 22.5px,
+    #b33771 22.5px,
+    #bb7af8 30px
+  );
+  transform: translateX(-20%) translateY(-20%) rotate(-45deg);
+  animation: animate 20s linear infinite;
+}
+
+.box__pet-description .content {
+  position: relative;
+  background-color: white;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 30px;
+  text-align: center;
+  font-family: sans-serif;
+  z-index: 2;
+}
+
+.box__pet-description,
+.box__pet-description .content {
+  box-shadow: 0 0 2px deeppink, 0 0 5px rgba(0, 0, 0, 1),
+    inset 0 0 5px rgba(0, 0, 0, 1);
+  border-radius: 10px;
+}
+
+.box__pet-description .content h2 {
+  color: deeppink;
+}
+
+.box__pet-description .content p {
+  color: dimgray;
+}
+
+@keyframes animate {
+  from {
+    background-position: 0;
+  }
+
+  to {
+    background-position: 0 450px;
+  }
+}
+
+.info__pet-description > i {
+  font-size: 1.2rem;
+}
+.info__pet-description > h1 {
+  font-size: 3rem;
+  margin-top: -30px;
+}
+.info__pet-description > h2 {
+  font-size: 1.2rem;
+  padding-top: 8px;
+}
+.info__pet-description > h4 {
+  font-weight: 100;
+  padding-bottom: 8px;
+}
+
+.description__pet-description > h4 {
+  font-weight: 100;
+  padding-top: 12px;
+  text-align: justify;
+  line-height: 20px;
+}
+
+.add-to-favorite___pet-description {
+  width: 100%;
+  height: 70px;
+  background: #c32c71;
+  border-style: none;
+  color: #fff;
+  font-size: 23px;
+  letter-spacing: 3px;
+  font-family: "Lato";
+  font-weight: 600;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  padding: 0px;
+  overflow: hidden;
+  transition: all 0.5s;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+}
+.add-to-favorite___pet-description span {
+  position: absolute;
+  display: block;
+}
+.add-to-favorite___pet-description span:nth-child(1) {
+  height: 3px;
+  width: 200px;
+  top: 0px;
+  left: -200px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), #f6e58d);
+  border-top-right-radius: 1px;
+  border-bottom-right-radius: 1px;
+  animation: span1 2s linear infinite;
+  animation-delay: 1s;
+}
+
+@keyframes span1 {
+  0% {
+    left: -200px;
+  }
+  100% {
+    left: 200px;
+  }
+}
+.add-to-favorite___pet-description span:nth-child(2) {
+  height: 70px;
+  width: 3px;
+  top: -70px;
+  right: 0px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #f6e58d);
+  border-bottom-left-radius: 1px;
+  border-bottom-right-radius: 1px;
+  animation: span2 2s linear infinite;
+  animation-delay: 2s;
+}
+@keyframes span2 {
+  0% {
+    top: -70px;
+  }
+  100% {
+    top: 70px;
+  }
+}
+.add-to-favorite___pet-description span:nth-child(3) {
+  height: 3px;
+  width: 200px;
+  right: -200px;
+  bottom: 0px;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0), #f6e58d);
+  border-top-left-radius: 1px;
+  border-bottom-left-radius: 1px;
+  animation: span3 2s linear infinite;
+  animation-delay: 3s;
+}
+@keyframes span3 {
+  0% {
+    right: -200px;
+  }
+  100% {
+    right: 200px;
+  }
+}
+
+.add-to-favorite___pet-description span:nth-child(4) {
+  height: 70px;
+  width: 3px;
+  bottom: -70px;
+  left: 0px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0), #f6e58d);
+  border-top-right-radius: 1px;
+  border-top-left-radius: 1px;
+  animation: span4 2s linear infinite;
+  animation-delay: 4s;
+}
+@keyframes span4 {
+  0% {
+    bottom: -70px;
+  }
+  100% {
+    bottom: 70px;
+  }
+}
+
+.add-to-favorite___pet-description:hover {
+  transition: all 0.5s;
+  transform: rotate(-3deg) scale(1.1);
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.4);
+  color: white;
+}
+.add-to-favorite___pet-description:hover span {
+  animation-play-state: paused;
+}
+.add-to-favorite___pet-description > .far:hover {
+  color: white;
+}
+
+.card__pet-description > h3 {
+  color: white;
+  margin: 1.4rem;
+  font-size: 1.3rem;
+  margin: 1.8rem;
+}
+
+.card__pet-description > i {
+  color: white;
+  margin: 1.4rem;
+  font-size: 0.9rem;
+}

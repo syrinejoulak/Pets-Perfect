@@ -1,0 +1,8 @@
+.no-pets {
+  padding-bottom: 50rem;
+}
+.no-pets > h3 {
+  color: thistle;
+  text-decoration: none;
+  text-align: center;
+}

@@ -1,0 +1,10 @@
+.no-favorite {
+    height: 100%;
+}
+.no-favorite > h1, h3 {
+    
+  color: #596966;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 5rem;
+}
